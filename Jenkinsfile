@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'git', url: 'https://github.com/adipant12/Mega-Project-CI-main.git'
+                git branch: 'main', url: 'https://github.com/adipant12/Mega-Project-CI-main.git'
             }
         }
         
