@@ -37,7 +37,7 @@ pipeline {
         
         stage('Sonar Analysis') {
             steps {
-                withSonarQubeEnv(credentialsId: 'sonar-token') {
+                withSonarQubeEnv('sonar-scanner') {
                     sh '''
                         $SCANNER_HOME/bin/sonar-scanner \
                         -Dsonar.projectKey=gcbank \
